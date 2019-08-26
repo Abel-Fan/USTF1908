@@ -204,3 +204,32 @@ s2 = {5,6,7,8,9}
 # 总结：
 # Number\String\None\Boolean\List\Tuple\Dict\Set
 # 可变数据：List\Dict\Set
+
+# 数据类型转换
+# int()  转化为整型
+# float() 转化为浮点型
+# bool() 转化为 boolean
+# str()  转化为 str
+# list() 转化为 list
+# set()  转化为set
+# print(int('123'))  # 只能转化数字类型的字符串
+# print(int('123a '))  error
+
+# print(float(12))
+# print(float('12'))
+# bool()
+# str: ""
+# number: 0
+# None
+# {}
+# []
+# print(bool(""))
+# print(bool(0))
+# print(bool(None))
+# print(bool([]))
+# print(bool(()))
+# print(bool({}))
+
+
+# arr = [1,1,2,2,3,3,4,4]
+# print(list(set(arr)))
