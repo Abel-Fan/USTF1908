@@ -147,3 +147,60 @@ arr = [1,2,3,4,5,6,7,8,9]
 # print(arr)
 # 5、遍历元素
 
+# 元组(不可改变的列表)
+# 语法
+# t1 = ()
+# t2 = (1)
+# t1 = (1,) 添加只有一个元素的元组时必须加 ,
+# t1 = (1,2,3,4,5)
+
+# 访问
+# print( t1[0])
+# print(t1[0:3])
+
+# 字典dict
+# 语法
+# d1 = {'键名':'键值','键名2':'键值2'}
+# d1 = {'name':'小明','age':19,'sex':'女'}
+# 基本操作
+# 访问
+# 变量名[键名]
+# print(d1['name'])
+# print(d1['sex'])
+# 添加
+# d1['hobby']="编程"
+# print(d1)
+# 修改
+# d1['hobby']="游泳"
+# print(d1)
+# 删除
+# del d1['hobby']
+# print(d1)
+# 遍历
+
+# 集合set
+s1 = {1,2,3,4,5}
+s2 = {5,6,7,8,9}
+# 特点 元素是唯一的
+#基本操作
+# 更新
+# s1.update({7,8,9})
+# print(s1)
+# print(dir(s1))
+# 添加
+# s1.add(6)
+# print(s1)
+# 删除
+# s1.remove(2)
+# print(s1)
+# s1.pop()   # 首位删除
+# print(s1)
+
+# 交集 并集 补集
+# print(s1&s2)
+# print(s1|s2)
+# print(s1^s2)
+
+# 总结：
+# Number\String\None\Boolean\List\Tuple\Dict\Set
+# 可变数据：List\Dict\Set
