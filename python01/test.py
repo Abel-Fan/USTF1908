@@ -22,6 +22,18 @@
 
 # 变量： 可改变的数据
 # 语法
+# 变量名命名规则
+# 你好="hello"
+# print(你好)
+"""
+1.  变量名由 字母 数字 下划线 组成 数字不能开头 ，也可以使用中文
+正确：name1 name2 
+错： 1name 2name 
+2、 不能使用关键字和保留字
+3、 严格区分大小写
+4、 尽量语义化
+
+"""
 """
 变量名 = 值
 # 链式赋值
@@ -85,6 +97,53 @@ str3 = "\\abc"
 """
 # 字符前缀
 # r取消转义作用
-print(r"a\nb")
+str1 = "山西优逸客"
+       # 0 1 2 3 4
+       #  ... -2-1
+# 从字符串中获取字符
+# str1[index]   str1[0]
+# print(str1[4])
+# print(str1[-1])
+# 切片
+# 变量名[start:end,step]
+# str1 = "hello world"
+# print(str1[-6::])
 
+# None
+# 布尔值 True False
+
+# list列表 数组
+# 用来存储一系列相关数据的集合
+# 语法
+# arr1 = []
+# arr2 = [1]
+# 一维列表
+arr1 = [56,76,78,47,90]
+# 二维列表
+# arr2 = [[1,2],[3,4],[5,6]]
+# 多维列表
+#arr3 = [[1,2],[2,3],[[3,4],[6,7]]]
+
+#基本操作
+arr = [1,2,3,4,5,6,7,8,9]
+# 1、访问元素
+# arr[index]
+# print(arr[0],arr[-1])
+# print(arr[0:5])  # 截取
+# 2、添加元素
+# arr.append('aa')  # 末尾添加
+# print(arr)
+# arr.insert(5,"aa")
+# print(arr)
+# 3、修改元素
+# arr[0] = "aa"
+# print(arr)
+# 4、删除元素
+# arr.remove(1) # 删除值为1的元素
+# print(arr)
+# arr.pop(2)  # 删除下标为2的元素
+# print(arr)
+# del arr[5]
+# print(arr)
+# 5、遍历元素
 
