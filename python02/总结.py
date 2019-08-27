@@ -73,6 +73,59 @@
 # 元组：不可改变的列表
 # 语法： t1 = (item1,item2,...)
 # 注意： 元组可以创建空元组 ，也可以创建只有一个元素的元组,形式：(1,)。
-t1 = ([1,2],[3,4])
-t1[0][0]="aa"
-print(t1)
+# t1 = ([1,2],[3,4])
+# t1[0][0]="aa"
+# print(t1)
+
+
+
+# 浅拷贝 与 深拷贝
+# arr1 = [1,2,3,4]
+# arr2 = arr1
+
+# arr2 = []
+# arr2.append(arr1[0])
+# arr2.append(arr1[1])
+# arr2.append(arr1[2])
+# arr2.append(arr1[3])
+
+
+# arr1 = [[1,2],[2,3]]
+# arr2 = []
+# arr2.append(arr1[0])
+# arr2.append(arr1[1])
+#
+# arr2[0][0]="aa"
+# print(arr1)
+
+import copy
+
+# arr1 = [1,2,3]
+# arr2 = copy.copy(arr1)
+# arr2[0] = "aa"
+# print(arr1)
+
+# arr1 = [[1,2],[2,3]]
+# arr2 = copy.deepcopy(arr1)
+# arr2[0][0]="aa"
+# print(arr1)
+
+# 字典
+# 语法：{'键':'值',}   键值对
+# 注意： 值可以是任意类型，键必须是不可变数据，字典没有顺序的。
+# 基本操作
+# 访问
+# 添加
+# 删除
+# 修改
+
+# 集合
+# 语法 {item1,item2,...}
+# 注意点：集合是不重复的
+# 操作
+# 添加 update  add
+# 删除 remove pop(首位删除)
+# 交并补
+
+# 数据类型转换
+# int float str bool list set
