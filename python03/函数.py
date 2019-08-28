@@ -7,8 +7,8 @@ def 函数名([arg1,arg2...]):
     函数体
     [return [value] ]
 """
-def mysum(num1,num2):   #形参：形式参数
-    return num1+num2
+# def mysum(num1,num2):   #形参：形式参数
+#     return num1+num2
 """调用语法
 函数名(56,46)
 """
@@ -111,4 +111,54 @@ myFind()
 #     print("args:",args)
 #     print("kwargs:", kwargs)
 # fn([1,2],12,456,"abc",name="xb",cj=45)
+
+# 名词解释
+# 高阶函数：返回值或者是参数是另外一个函数的函数
+# def fn1():
+#     def fn2():
+#         print("this is fn2")
+#     return fn2
+#
+# fn2 = fn1()
+# fn2()
+# fn2()
+
+# def fn(num1,num2,fun):
+#     fun(num1,num2)
+#
+#
+# def add(n1,n2):
+#     print(n1+n2)
+#
+# fn(10,20,add)
+
+# 柯里化
+# def mysum(num1):
+#     def newMysum(num2):
+#         print(num2+num1)
+#     return newMysum
+# mysum(10)(30)
+
+# 闭包：发生嵌套关系的两个函数，内部函数使用外部函数的变量，在全局情况下调用内部函数时形成闭包，用来保护数据
+# def fn1():
+#     arr1 = []
+#     def fn2(item):
+#         arr1.append(item)
+#         print(arr1)
+#     return fn2
+# fn2 = fn1()
+# fn2(1)
+# fn2(2)
+# fn2(3)
+
+# 递归：自己调用自己
+# 阶乘、深拷贝、拷贝目录
+# def jc(num):
+#     return (1 if  num==1  else  num*jc(num-1))
+#     # if num==1:
+#     #     return 1
+#     # else:
+#     #     return num*jc(num-1)
+#
+# print(jc(9))
 
