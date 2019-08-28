@@ -162,3 +162,30 @@ myFind()
 #
 # print(jc(9))
 
+# 作用域：变量起作用的范围。
+# 作用域链：
+
+# name = "abc"
+# global
+# def fn():
+#     global name
+#     name = "bcd"
+#     print(name)  # bcd
+#
+# fn()
+# print(name) #
+
+
+
+# nolocal
+# name = "abc"
+# def fn():
+#     name = "bcd"
+#     def newFun():
+#         nonlocal name
+#         name = "def"
+#     newFun()
+#     print(name) #"def"
+# fn()
+# print(name) #"abc"
+
