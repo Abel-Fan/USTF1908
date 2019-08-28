@@ -146,10 +146,10 @@ for(var i=0;i<10;i++){
 # while 明确循环条件
 
 # 干预循环 break 退出循环   continue 退出本次循环，直接开始下次循环
-
-for i in range(5):
-    if i==2:
-        # continue
-        break
-
-    print(i)
+# 循环语句可能带有一个 else 子句；它会在循环遍历完列表 (使用 for) 或是在条件变为假 (使用 while) 的时候被执行，但是不会在循环被 break 语句终止时被执行。
+# for i in range(5):
+#     if i==2:
+#         # continue
+#         break
+#
+#     print(i)
