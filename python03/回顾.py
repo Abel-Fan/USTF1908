@@ -42,3 +42,13 @@ obj = {'name':'小白','age':'18','sex':'男'}
 # 字典推导式
 # print({ v:k for k,v in obj.items()})
 # print({ k:"xm" for k in obj if k=="name"})
+#         'a':[1,2,6,7] 'b':[3,4,8,9]
+# obj = {'a':[1,2],"B":[3,4],"A":[6,7],"b":[8,9]}
+#
+# obj2 = { k.upper():obj.get(k.upper())+obj.get(k.lower()) for k,v in obj.items() if k in ['a','b']}
+# print(obj2)
+
+# 集合推导式
+# s1 = {1,2,3,4,5,6}
+# s2 = { i**2 for i in s1 if i%2==0}
+# print(s2)
