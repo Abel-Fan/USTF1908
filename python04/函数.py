@@ -32,3 +32,24 @@ mysum(10,20)
 #
 # res = mymap(lambda x:x**2,[1,2,3,4,5,6])
 # print(res)
+import requests
+from lxml import etree
+url = "http://soso.huitu.com/search?kw=中秋"
+
+res = requests.get(url)
+htmltext = res.text
+html = etree.HTML(htmltext)
+imgurls = html.xpath('//div[@class="seozone"]/a/img/@src')
+
+def download(url):
+    res = requests.get(url)
+    imgData = res.content # 二进制图片数据
+    # 保存文件
+    arr = url.split("/")
+    filename = arr[-1]
+    with open("img/"+filename,"wb") as f:
+        f.write(imgData)
+    print(filename+"-下载完成.")
+
+for file in imgurls:
+    download(file)
